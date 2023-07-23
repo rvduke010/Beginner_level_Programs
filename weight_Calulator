@@ -1,0 +1,8 @@
+weight=input("weight")
+# print("weight:"+weight)
+counter=input("(K)g or (L)bs")
+if(counter=="L"):
+    weight=weight*2.2046
+    print(float(weight))
+elif(counter=="K"):
+    print(str(weight*0.45359237))
