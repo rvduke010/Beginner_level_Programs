@@ -1,0 +1,21 @@
+import random
+
+print("welcome to Guessing number ")
+
+ran= random.randint(1,100)
+
+attempts=0
+while True:
+    num = int(input("guess your number : "))
+    attempts+=1
+    if num < ran:
+        print(f"{num} too low value guess again ")
+    elif ran > num:
+        print(f" {num} too high value guess again ")
+
+    else:
+        print(f"Super you have won after this many {attempts} attempts")
+        break
+
+   
+
